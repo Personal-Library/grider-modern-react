@@ -1,6 +1,6 @@
 # README
 
-This folder contains the projects created whilst attending Stephen Grider's Modern React with React
+This folder contains the projects created whilst attending Stephen Grider's Modern React with Redux
 course on udemy. 
 
 ## Installation
