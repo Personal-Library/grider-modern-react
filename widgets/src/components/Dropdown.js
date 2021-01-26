@@ -60,6 +60,9 @@ const Dropdown = ({ options, selected, onSelectedChange, label }) => {
           </div>
         </div>
       </div>
+      <h1 style={{ color: selected.value  }}>
+        Almost before we knew it, we had left the ground.
+      </h1>
     </div>
   );
 }

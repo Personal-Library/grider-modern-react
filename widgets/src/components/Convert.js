@@ -18,7 +18,7 @@ const Convert = ({ language, text }) => {
   }, [language, text])
 
 
-  // Use debounced language, text to set translation
+  // Use debounced language, text to get/set translation
   useEffect(() => {
     const doTranslation = async() => {
       const { data } = await axios.post('https://translation.googleapis.com/language/translate/v2', {}, {
@@ -30,7 +30,9 @@ const Convert = ({ language, text }) => {
       });
       setTranslated(data.data.translations[0].translatedText)
     }
-    doTranslation()
+    if (debouncedText) {
+      doTranslation()
+    }
   }, [debouncedLang, debouncedText])
 
 
