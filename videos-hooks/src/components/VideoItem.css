@@ -1,10 +1,10 @@
-.video-item.item.item{
-  display: flex;
+.video-item.item.item {
+	display: flex;
 }
 
 .ui.image {
-  height: 120px;
-  width: 200px;
-  margin-right: 10px;
-  cursor: pointer;
+	height: 120px;
+	width: 200px;
+	margin-right: 10px;
+	cursor: pointer;
 }

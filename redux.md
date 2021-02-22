@@ -1,13 +1,15 @@
 # What is Redux?
+
 - state management library
 - makes creating complex applications easier
 - not required to create a React app!
 - not limited to working with just React
 
 ## Redux Cycle
+
 Action Creator -> Action -> Dispatch -> Reducers -> State
 
-An **Action Creator** produces an **Action Object** which gets fed to **Dispatch** which forwards copies of the action to **Reducers** which creates new **State** which is available for us to consume. 
+An **Action Creator** produces an **Action Object** which gets fed to **Dispatch** which forwards copies of the action to **Reducers** which creates new **State** which is available for us to consume.
 
 ## Insurance Company Analogy
 
@@ -19,11 +21,12 @@ Person w/ Form -> Form -> Form Receiver -> Departments -> Compiled Department Da
   - PAYLOAD: describes some context around the change we want to make
 - Dispatch: a function that takes in an action and sends it to our reducers
 - Reducers: a function that is responsible for taking in an action and some existing amount of data, processes the action and returns the modified data to the state
-- State: All of our information is consolidated within this single object 
+- State: All of our information is consolidated within this single object
 
 ## Action Creators
+
 ```
-// People dropping off a form 
+// People dropping off a form
 // 1. create policy
 const createPolicy = (name, amount) => {
   return {
@@ -59,6 +62,7 @@ const deletePolicy = (name) => {
 ```
 
 ## Dispatch
+
 ```
 const { createStore, combineReducers } = Redux;
 
@@ -82,6 +86,7 @@ console.log(store.getState());
 ```
 
 ## Reducers
+
 ```
 // Reducers (Departments!)
 const claimsHistory = (oldListOfClaims = [], action) => {
@@ -112,4 +117,3 @@ const policies = (listOfPolicies = [], action) => {
 	return listOfPolicies;
 };
 ```
-

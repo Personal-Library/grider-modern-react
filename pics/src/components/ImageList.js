@@ -3,14 +3,11 @@ import './ImageList.css';
 import ImageCard from './ImageCard';
 
 const ImageList = (props) => {
-  const images = props.images.map( (image) => 
-    <ImageCard key={image.id} image={image} /> )
+	const images = props.images.map((image) => (
+		<ImageCard key={image.id} image={image} />
+	));
 
-  return (
-    <div className="image-list">
-      {images}
-    </div>
-  );
-}
+	return <div className="image-list">{images}</div>;
+};
 
 export default ImageList;

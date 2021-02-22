@@ -1,9 +1,9 @@
-.video-item.item.item{
-  display: flex;
+.video-item.item.item {
+	display: flex;
 }
 
 .ui.image {
-  max-width: 200px;
-  margin-right: 10px;
-  cursor: pointer;
+	max-width: 200px;
+	margin-right: 10px;
+	cursor: pointer;
 }

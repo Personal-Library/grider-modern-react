@@ -1,48 +1,47 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 .icon-left {
-  position: absolute;
-  top: 40px;
-  left: 40px;
+	position: absolute;
+	top: 40px;
+	left: 40px;
 }
 
 .icon-right {
-  position: absolute;
-  bottom: 40px;
-  right: 40px;
+	position: absolute;
+	bottom: 40px;
+	right: 40px;
 }
 
 .icon-top {
-  position: absolute;
-  top: 200px;
-  left: 600px;
+	position: absolute;
+	top: 200px;
+	left: 600px;
 }
 
 .icon-bottom {
-  position: absolute;
-  bottom: 200px;
-  right: 600px;
+	position: absolute;
+	bottom: 200px;
+	right: 600px;
 }
 
 .season-display {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .winter {
-  color: teal;
-  background-color: aliceblue;
+	color: teal;
+	background-color: aliceblue;
 }
 
 .summer {
-  color: maroon;
-  background-color: peru;
+	color: maroon;
+	background-color: peru;
 }
-

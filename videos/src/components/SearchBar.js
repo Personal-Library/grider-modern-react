@@ -12,13 +12,13 @@ class SearchBar extends React.Component {
 		this.setState({
 			term: event.target.value,
 		});
-  };
-  
-  handleSubmit = (event) => {
-    event.preventDefault();
-    this.props.initSearch(this.state.term)
-    this.setState({ term: '' })
-  }
+	};
+
+	handleSubmit = (event) => {
+		event.preventDefault();
+		this.props.initSearch(this.state.term);
+		this.setState({ term: '' });
+	};
 
 	render() {
 		return (
@@ -29,7 +29,7 @@ class SearchBar extends React.Component {
 						<input
 							type="text"
 							value={this.state.term}
-              onChange={this.handleChange}
+							onChange={this.handleChange}
 						/>
 					</div>
 				</form>

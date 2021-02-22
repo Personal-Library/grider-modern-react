@@ -9,47 +9,50 @@ class App extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-      videos: [],
-      selectedVideo: null
-    };
+			videos: [],
+			selectedVideo: null,
+		};
 	}
 
-  componentDidMount() {
-    this.initSearch('lo-fi')
-  }
+	componentDidMount() {
+		this.initSearch('lo-fi');
+	}
 
-  initSearch = async(term) => {
-    const response = await youtube.get('/search', {
-      params: {
-        q: term
-      }
-    })
-    this.setState({
-      videos: response.data.items,
-      selectedVideo: response.data.items[0]
-    })
-  }
+	initSearch = async (term) => {
+		const response = await youtube.get('/search', {
+			params: {
+				q: term,
+			},
+		});
+		this.setState({
+			videos: response.data.items,
+			selectedVideo: response.data.items[0],
+		});
+	};
 
-  onVideoSelect = (video) => {
-    this.setState({
-      selectedVideo: video
-    })
-  }
+	onVideoSelect = (video) => {
+		this.setState({
+			selectedVideo: video,
+		});
+	};
 
 	render() {
 		return (
 			<div className="ui container">
 				<SearchBar initSearch={this.initSearch} />
-        <div className="ui grid">
-          <div className="ui row">
-            <div className="eleven wide column">
-              <VideoDetail video={this.state.selectedVideo}/>
-            </div>
-            <div className="five wide column">
-              <VideoList onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
-            </div>
-          </div>
-        </div>
+				<div className="ui grid">
+					<div className="ui row">
+						<div className="eleven wide column">
+							<VideoDetail video={this.state.selectedVideo} />
+						</div>
+						<div className="five wide column">
+							<VideoList
+								onVideoSelect={this.onVideoSelect}
+								videos={this.state.videos}
+							/>
+						</div>
+					</div>
+				</div>
 			</div>
 		);
 	}
