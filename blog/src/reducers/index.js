@@ -5,7 +5,10 @@ import { combineReducers } from 'redux';
  */
 
 import { postsReducer } from './postsReducer';
+import { usersReducer } from './usersReducer';
 
+// This is now state, and we can access it using mapStateToProps inside of our components
 export default combineReducers({
-	postsReducer,
+	posts: postsReducer,
+	users: usersReducer,
 });
