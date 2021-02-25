@@ -1,5 +1,7 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
+import { connect } from 'react-redux';
+import { createStream } from '../../actions';
 
 // When you use {...formProps.input} it takes all those key value pairs and adds them as properties to the input element. This is the preferred way to give props to redux form input elements as of 02/24/2020.
 
@@ -7,6 +9,7 @@ class StreamCreate extends React.Component {
 	constructor(props) {
 		super(props);
 		this.renderInput = this.renderInput.bind(this);
+		this.onSubmit = this.onSubmit.bind(this);
 	}
 
 	renderError({ error, touched }) {
@@ -20,7 +23,7 @@ class StreamCreate extends React.Component {
 	}
 
 	renderInput(formProps) {
-    const className = `field ${formProps.meta.error && formProps.meta.touched ? 'error' : ''}`
+		const className = `field ${formProps.meta.error && formProps.meta.touched ? 'error' : ''}`;
 		return (
 			<div className={className}>
 				<label>{formProps.label}</label>
@@ -30,7 +33,9 @@ class StreamCreate extends React.Component {
 		);
 	}
 
-	onSubmit(formValues) {}
+	onSubmit(formValues) {
+		this.props.createStream(formValues);
+	}
 
 	render() {
 		return (
@@ -54,7 +59,9 @@ const validate = (formValues) => {
 	return errors;
 };
 
-export default reduxForm({
+const formWrapped = reduxForm({
 	form: 'streamCreate',
 	validate: validate,
 })(StreamCreate);
+
+export default connect(null, { createStream })(formWrapped);
