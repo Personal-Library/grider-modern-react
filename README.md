@@ -22,10 +22,44 @@ Start project preview
 
 Read this markdown before moving forward with this project.
 
+## Table of Contents
+An overview of the projects created in this course along with some of the topics that they cover.
+
+1. **first-app**
+  - covers basic JSX and React syntax
+  - this first app is only a small form with a label and a button.
+2. **components-app**
+  - covers components in-depth
+  - renders an simple card component to the screen
+3. **seasons**
+  - covers class-based components
+  - renders a unique background depending the users physical location
+4. **pics**
+  - covers controlled forms and list building
+  - uses the unsplash API to render images using search criteria
+5. **videos-classes**
+  - covers everything so far in order to cement knowledge base
+  - uses the Google API to search for and render youtube videos on the screen
+6. **widgets-app**
+  - introduces hooks by creating lots of useful widgets
+  - contains an accordion, dropdown, and translator field
+7. **videos-hooks**
+  - same project as *video-classes*, but recreated with hooks
+8. **songs**
+  - introduction to redux by creating a song picker
+  - allows the user to choose song from list and render details onto the screen
+9. **blog**
+  - covers asynchronous requests using redux-thunk
+  - renders a list of blog posts onto the screen fetched from the JSONPlaceholder API
+10. **streams**
+  - introduces Google OAuth and CRUD operations in React
+  - creation of a Streaming Client, Node.js RTMP server and JSON API backend
+  - allows the user to Create, Read, Update, and Delete streams and stream to the client using OBS
+
 ## Contributing
 
-Please open an issue to suggest greetings other than "Hello" or recipients other than "World".
+This project is not maintained. You are welcome to modify and distribute any versions as you please.
 
 ## License
 
-[Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+MIT License
