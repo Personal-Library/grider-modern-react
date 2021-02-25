@@ -55,6 +55,9 @@ An overview of the projects created in this course along with some of the topics
   - introduces Google OAuth and CRUD operations in React
   - creation of a Streaming Client, Node.js RTMP server and JSON API backend
   - allows the user to Create, Read, Update, and Delete streams and stream to the client using OBS
+11. **translate-app**
+  - introduces the React Context system for communicating between components
+  - simple app that contains an submit button and label which change languages depending on user selection
 
 ## Contributing
 
