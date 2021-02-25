@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import LanguageContext from '../contexts/LanguageContext';
 import ColorContext from '../contexts/ColorContext';
 
-class Button extends Component {
+export default class Button extends Component {
 	renderButton(color) {
 		return (
 			<button className={`ui button ${color}`} style={{ marginTop: '10px' }}>
 				<LanguageContext.Consumer>
-					{(value) => (value === 'english' ? 'Submit' : 'Voorleggen')}
+					{(contextObject) => (contextObject.language === 'english' ? 'Submit' : 'Voorleggen')}
 				</LanguageContext.Consumer>
 			</button>
 		);
@@ -21,5 +21,3 @@ class Button extends Component {
 		return <ColorContext.Consumer>{(value) => this.renderButton(value)}</ColorContext.Consumer>;
 	}
 }
-
-export default Button;

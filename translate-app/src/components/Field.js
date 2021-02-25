@@ -5,12 +5,12 @@ import LanguageContext from '../contexts/LanguageContext';
 // Setup a contextType
 // Then use the this.context property
 
-class Field extends Component {
+export default class Field extends Component {
 	// Adds the this.context property to the class itself
 	static contextType = LanguageContext;
 
 	render() {
-		const text = this.context === 'english' ? 'Name' : 'Naam';
+		const text = this.context.language === 'english' ? 'Name' : 'Naam';
 		return (
 			<div>
 				<label>{text}</label>
@@ -19,5 +19,3 @@ class Field extends Component {
 		);
 	}
 }
-
-export default Field;
