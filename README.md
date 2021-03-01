@@ -25,13 +25,13 @@ Read this markdown before moving forward with this project.
 ## Table of Contents
 An overview of the projects created in this course along with some of the topics that they cover.
 
-1. **first-app**
+1. **[first-app](first-app)**
   - covers basic JSX and React syntax
   - this first app is only a small form with a label and a button.
-2. **components-app**
+2. **[components-app](components-app)**
   - covers components in-depth
   - renders an simple card component to the screen
-3. **seasons**
+3. **[seasons](seasons)**
   - covers class-based components
   - renders a unique background depending the users physical location
 4. **pics**
