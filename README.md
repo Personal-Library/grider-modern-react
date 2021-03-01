@@ -34,28 +34,28 @@ An overview of the projects created in this course along with some of the topics
 3. **[seasons](seasons)**
   - covers class-based components
   - renders a unique background depending the users physical location
-4. **pics**
+4. **[pics](pics)**
   - covers controlled forms and list building
   - uses the unsplash API to render images using search criteria
-5. **videos-classes**
+5. **[videos-classes](videos-classes)**
   - covers everything so far in order to cement knowledge base
   - uses the Google API to search for and render youtube videos on the screen
-6. **widgets-app**
+6. **[widgets-app](widgets-app)**
   - introduces hooks by creating lots of useful widgets
   - contains an accordion, dropdown, and translator field
-7. **videos-hooks**
+7. **[videos-hooks](videos-hooks)**
   - same project as *video-classes*, but recreated with hooks
-8. **songs**
+8. **[songs](songs)** also reference the [Redux Notes](redux.md)
   - introduction to redux by creating a song picker
   - allows the user to choose song from list and render details onto the screen
-9. **blog**
+9. **[blog](blog)**
   - covers asynchronous requests using redux-thunk
   - renders a list of blog posts onto the screen fetched from the JSONPlaceholder API
-10. **streams**
+10. **[streams](streams)**
   - introduces Google OAuth and CRUD operations in React
   - creation of a Streaming Client, Node.js RTMP server and JSON API backend
   - allows the user to Create, Read, Update, and Delete streams and stream to the client using OBS
-11. **translate-app**
+11. **[translate-app](translate-app)**
   - introduces the React Context system for communicating between components
   - simple app that contains an submit button and label which change languages depending on user selection
 
