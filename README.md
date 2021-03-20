@@ -1,10 +1,31 @@
-# README
+# Modern React with Redux
 
-This folder contains the projects created whilst attending Stephen Grider's Modern React with Redux course on udemy.
+## Description
+
+This folder contains the projects created while attending Stephen Grider's Modern React with Redux course on udemy.
+
+## Technologies
+
+- React
+  - Class components
+  - Functional components
+  - Hooks
+  - Portals
+- Redux
+- Redux Thunk
+- Google OAuth
 
 ## Installation
 
 Each project contains an isolated create-react-app file. In order to access each project:
+
+Clone the repository
+
+`git clone git@github.com:Personal-Library/grider-modern-react.git`
+
+Move into the cloned directory
+
+`cd grider-modern-react`
 
 Change into directory
 
